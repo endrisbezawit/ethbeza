@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, 
+initial-scale=1">
+<title>
+my example</title>
+</head>
+<body>
+<script>
+var i=0;
+var images=[];
+var time=3000;
+
+//list
+images[0]="img/authorB.jpg";
+images[1]="img/banner.jpg";
+images[2]="img/home-bg.jpg";
+function chanegeImg(){
+document.slide.src = images[i];
+
+if( i < images.length -1){
+i++;
+} else{
+i=0;
+}
+
+setTimeout("changeImg()" ,time);
+}
+
+window.onload=changeImag;
+
+</script>
+<img name="slide" width="400" height="200">
+</body>
+</html>
